@@ -14,7 +14,7 @@ Esta app la he desarrollado en Android Studio con lenguaje Kotiln.
 
 
 
-<img src="https://github.com/UrielCT/LoginMVVM/blob/main/login.jpeg" alt="drawing" width="120" height="350"/>
+<img src="https://github.com/UrielCT/LoginMVVM/blob/main/login.jpeg" alt="drawing" width="200" height="420"/>
 
 
 ![]("https://github.com/UrielCT/LoginMVVM/blob/main/register.jpeg")
