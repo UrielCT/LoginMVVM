@@ -3,7 +3,7 @@
 
 Esta app la he desarrollado en Android Studio con lenguaje Kotiln.
 
-####Implemento 
+#### Implemento 
 
 * Firebase Authentication
 * Firebase Firestore
@@ -13,8 +13,8 @@ Esta app la he desarrollado en Android Studio con lenguaje Kotiln.
 * Clean Architecture
 
 
-![](https://github.com/UrielCT/LoginMVVM/blob/main/login.jpeg)
+![](https://github.com/UrielCT/LoginMVVM/blob/main/login.jpeg =100x40)
 
-![](https://github.com/UrielCT/LoginMVVM/blob/main/register.jpeg)
+![](https://github.com/UrielCT/LoginMVVM/blob/main/register.jpeg =100x40)
 
 
