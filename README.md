@@ -13,11 +13,9 @@ Esta app la he desarrollado en Android Studio con lenguaje Kotiln.
 * Clean Architecture
 
 
-<img src="https://github.com/UrielCT/LoginMVVM/blob/main/login.jpeg" width="48"height="120">
+
+<img src="https://github.com/UrielCT/LoginMVVM/blob/main/login.jpeg" alt="drawing" width="40" height="100"/>
 
 
-
-<img src="https://github.com/UrielCT/LoginMVVM/blob/main/register.jpeg" width="48"height="120">
-
-
+![]("https://github.com/UrielCT/LoginMVVM/blob/main/register.jpeg")
 
