@@ -2,21 +2,22 @@ package com.example.loginmvvm.ui.view.activities
 
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
-import com.example.loginmvvm.data.network.LoginRepoImp
 import com.example.loginmvvm.databinding.ActivityEditProfileBinding
-import com.example.loginmvvm.domain.LoginUseCaseImp
 import com.example.loginmvvm.ui.viewmodel.LoginViewModel
-import com.example.loginmvvm.ui.viewmodel.LoginViewModelFactory
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class EditProfileActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityEditProfileBinding
 
-    private val viewModel by lazy { ViewModelProvider(this, LoginViewModelFactory(LoginUseCaseImp(
-        LoginRepoImp())))[LoginViewModel::class.java] }
+    private val viewModel: LoginViewModel by viewModels()
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

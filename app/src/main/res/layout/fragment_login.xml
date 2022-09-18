@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -89,7 +90,7 @@
         android:id="@+id/txt_go_to_registrarse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrate aquí"
+        android:text="Regístrate aquí"
         android:textSize="16sp"
         android:textColor="@color/green_accent"
         android:textStyle="bold"

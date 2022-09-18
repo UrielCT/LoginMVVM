@@ -5,12 +5,12 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.tasks.await
+import javax.inject.Inject
 
-class LoginRepoImp : LoginRepo{
-
-    private var mAuth: FirebaseAuth = FirebaseAuth.getInstance()
-    private val mFirestore : FirebaseFirestore = FirebaseFirestore.getInstance()
-
+class LoginRepoImp @Inject constructor(
+    private val mAuth: FirebaseAuth,
+    private val mFirestore: FirebaseFirestore
+) : LoginRepo{
 
     // login con email y contraseña
 
@@ -99,7 +99,6 @@ class LoginRepoImp : LoginRepo{
             null
         }catch (e:Exception){
             e.localizedMessage
-
         }
     }
 

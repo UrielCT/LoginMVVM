@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "398611637829",
+    "project_id": "loginmvvm-ed8c8",
+    "storage_bucket": "loginmvvm-ed8c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398611637829:android:545b19d0b04c27417ca52c",
+        "android_client_info": {
+          "package_name": "com.example.loginmvvm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398611637829-0ekcctdrtbsi3sf21cmlv1gtmsvd26o8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.loginmvvm",
+            "certificate_hash": "18ba398a5b23fd8bd6594e689b94853b471eba64"
+          }
+        },
+        {
+          "client_id": "398611637829-3otc9b18arhon2ivuan3havglu1onvm0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH78dLSUQCegye1Z5MLm9ERXjEpyAWxEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398611637829-3otc9b18arhon2ivuan3havglu1onvm0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

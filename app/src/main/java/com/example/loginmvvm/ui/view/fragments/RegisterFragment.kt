@@ -6,24 +6,23 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.loginmvvm.R
 import com.example.loginmvvm.core.isEmailValid
-import com.example.loginmvvm.data.network.LoginRepoImp
 import com.example.loginmvvm.databinding.FragmentRegisterBinding
-import com.example.loginmvvm.domain.LoginUseCaseImp
 import com.example.loginmvvm.ui.viewmodel.LoginViewModel
-import com.example.loginmvvm.ui.viewmodel.LoginViewModelFactory
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class RegisterFragment : Fragment() {
 
     private var _binding: FragmentRegisterBinding? = null
     private val binding get() = _binding!!
 
-    private val viewModel by lazy { ViewModelProvider(this, LoginViewModelFactory(LoginUseCaseImp(LoginRepoImp())))[LoginViewModel::class.java] }
+    private val viewModel: LoginViewModel by viewModels()
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle? ): View? {
@@ -34,7 +33,7 @@ class RegisterFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val navHostFragment: NavHostFragment = activity!!.supportFragmentManager.findFragmentById(R.id.activity_main_NavHostFragment) as NavHostFragment
+        val navHostFragment: NavHostFragment = requireActivity().supportFragmentManager.findFragmentById(R.id.activity_main_NavHostFragment) as NavHostFragment
         val navController: NavController = navHostFragment.navController
 
         observeUserRegister()

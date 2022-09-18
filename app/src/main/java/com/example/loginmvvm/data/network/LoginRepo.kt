@@ -2,7 +2,7 @@ package com.example.loginmvvm.data.network
 
 import com.example.loginmvvm.data.models.User
 
-interface LoginRepo {
+interface LoginRepo  {
 
 
     suspend fun loginRepo(email:String, password:String) : String?
@@ -21,6 +21,7 @@ interface LoginRepo {
 
 
     suspend fun logoutRepo()
+
 
     suspend fun updateUserDataRepo(name:String,lastName: String,phone: String) :String?
 
